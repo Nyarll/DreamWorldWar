@@ -14,6 +14,7 @@
     <ProjectGuid>{2BF57C33-CE84-4CAF-818B-D6E871230DDA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>PacShot</RootNamespace>
+    <ProjectName>DreamWorldWar</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -91,10 +92,13 @@
   </ItemDefinitionGroup>
   <!-- ソースファイル -->
   <ItemGroup>
+    <ClCompile Include="Game\Back.cpp" />
+    <ClCompile Include="Game\DrawSprite.cpp" />
     <ClCompile Include="Game\MyLibrary\Collision.cpp" />
     <ClCompile Include="Game\MyLibrary\DrawFunction.cpp" />
     <ClCompile Include="Game\Player.cpp" />
     <ClCompile Include="Game\PlayScene.cpp" />
+    <ClCompile Include="Game\SceneManager.cpp" />
     <ClCompile Include="Game\ShotInit.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibGraphics.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibInput.cpp" />
@@ -106,6 +110,7 @@
   </ItemGroup>
   <!-- ヘッダファイル -->
   <ItemGroup>
+    <ClInclude Include="Game\Back.h" />
     <ClInclude Include="Game\Define.h" />
     <ClInclude Include="Game\GameObjectStruct.h" />
     <ClInclude Include="Game\MyLibrary\Collision.h" />
@@ -115,6 +120,7 @@
     <ClInclude Include="Game\MyLibrary\Struct.h" />
     <ClInclude Include="Game\Player.h" />
     <ClInclude Include="Game\PlayScene.h" />
+    <ClInclude Include="Game\SceneManager.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLib.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLibGraphics.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLibInput.h" />

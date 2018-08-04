@@ -12,7 +12,7 @@
 
 // ヘッダファイルの読み込み ================================================
 #include "GameMain.h"
-
+#include "SceneManager.h"
 
 
 
@@ -46,25 +46,25 @@ void FinalizeGame(void);    // ゲームの終了処理
 // ゲームの初期化処理
 void InitializeGame(void)
 {
-
+	InitScene();
 }
 
 // ゲームの更新処理
 void UpdateGame(void)
 {
-
+	UpdateScene();
 }
 
 // ゲームの描画処理
 void RenderGame(void)
 {
-	
+	RenderScene();
 }
 
 // ゲームの終了処理
 void FinalizeGame(void)
 {
-
+	FinalScene();
 }
 
 

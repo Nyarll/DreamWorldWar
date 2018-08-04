@@ -48,6 +48,9 @@
     <Filter Include="ゲーム\GameObject\Player">
       <UniqueIdentifier>{049b9547-e131-4870-b979-0dec8ff13b3e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ゲーム\GameObject\Back">
+      <UniqueIdentifier>{311d6091-ffd9-402c-ad16-5f1deb989f5f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <!-- ソースファイル -->
   <ItemGroup>
@@ -84,6 +87,15 @@
     </ClCompile>
     <ClCompile Include="Game\PlayScene.cpp">
       <Filter>ゲーム\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\SceneManager.cpp">
+      <Filter>ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DrawSprite.cpp">
+      <Filter>ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Back.cpp">
+      <Filter>ゲーム\GameObject\Back</Filter>
     </ClCompile>
   </ItemGroup>
   <!-- ヘッダファイル -->
@@ -138,6 +150,12 @@
     </ClInclude>
     <ClInclude Include="Game\PlayScene.h">
       <Filter>ゲーム\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\SceneManager.h">
+      <Filter>ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Back.h">
+      <Filter>ゲーム\GameObject\Back</Filter>
     </ClInclude>
   </ItemGroup>
   <!-- リソースファイル -->

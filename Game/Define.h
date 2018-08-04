@@ -1,8 +1,11 @@
 #pragma once
 
+// <System>
+#define TEXTURE_LOAD_MISSING (-1)
+
 // <âÊñ > 
-#define SCREEN_WIDTH    (640)                  // âÊñ ÇÃïù[pixel]
-#define SCREEN_HEIGHT   (480)                  // âÊñ ÇÃçÇÇ≥[pixel]
+#define SCREEN_WIDTH    (1080)                  // âÊñ ÇÃïù[pixel]
+#define SCREEN_HEIGHT   (800)                  // âÊñ ÇÃçÇÇ≥[pixel]
 
 #define SCREEN_TOP      (0)                    // âÊñ ÇÃè„í[
 #define SCREEN_BOTTOM   (SCREEN_HEIGHT)        // âÊñ ÇÃâ∫í[
@@ -14,7 +17,7 @@
 
 // <ÉQÅ[ÉÄâÊñ >
 #define GAME_SCREEN_LEFT	(SCREEN_LEFT)
-#define GAME_SCREEN_RIGHT	(SCREEN_RIGHT)
+#define GAME_SCREEN_RIGHT	(SCREEN_RIGHT - 540)
 #define GAME_SCREEN_TOP		(SCREEN_TOP)
 #define GAME_SCREEN_BOTTOM	(SCREEN_BOTTOM)
 
@@ -22,6 +25,7 @@
 #define GAME_SCREEN_CENTER_Y	(GAME_SCREEN_BOTTOM / 2)
 
 // <Player>
+#define PLAYER_SPEED 2
 #define PLAYER_SHOT_NUM 60
 
 // <Enemy>

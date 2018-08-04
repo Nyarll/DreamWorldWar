@@ -8,6 +8,5 @@ void InitShot(ObjectShot* shot)
 
 	shot->pos = shot->vel = shot->spd = { 0,0 };
 
-	shot->texture = NULL;
-
+	shot->asset.texture = NULL;
 }
