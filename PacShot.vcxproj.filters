@@ -51,6 +51,18 @@
     <Filter Include="ゲーム\GameObject\Back">
       <UniqueIdentifier>{311d6091-ffd9-402c-ad16-5f1deb989f5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ゲーム\Scene\Play">
+      <UniqueIdentifier>{b1159fc2-817f-4743-aaea-608338dc0c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\GameObject\Enemy">
+      <UniqueIdentifier>{27395271-b709-4104-8664-f97be4c96a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\GameObject\Score">
+      <UniqueIdentifier>{aefa41f0-018c-42bc-a797-beb040b55351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\sound">
+      <UniqueIdentifier>{d55a1a95-43bc-4f2c-ae45-342a27395a7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <!-- ソースファイル -->
   <ItemGroup>
@@ -79,14 +91,8 @@
     <ClCompile Include="Libraries\GameLibrary\GameLibTime.cpp">
       <Filter>ライブラリ\ゲームライブラリ</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Player.cpp">
-      <Filter>ゲーム\GameObject\Player</Filter>
-    </ClCompile>
     <ClCompile Include="Game\ShotInit.cpp">
       <Filter>ゲーム</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\PlayScene.cpp">
-      <Filter>ゲーム\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Game\SceneManager.cpp">
       <Filter>ゲーム</Filter>
@@ -96,6 +102,21 @@
     </ClCompile>
     <ClCompile Include="Game\Back.cpp">
       <Filter>ゲーム\GameObject\Back</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene.cpp">
+      <Filter>ゲーム\Scene\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Player.cpp">
+      <Filter>ゲーム\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Score.cpp">
+      <Filter>ゲーム\GameObject\Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Enemy.cpp">
+      <Filter>ゲーム\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Sound.cpp">
+      <Filter>ゲーム\sound</Filter>
     </ClCompile>
   </ItemGroup>
   <!-- ヘッダファイル -->
@@ -142,20 +163,29 @@
     <ClInclude Include="Game\GameObjectStruct.h">
       <Filter>ゲーム</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Player.h">
-      <Filter>ゲーム\GameObject\Player</Filter>
-    </ClInclude>
     <ClInclude Include="Game\Define.h">
       <Filter>ゲーム</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\PlayScene.h">
-      <Filter>ゲーム\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Game\SceneManager.h">
       <Filter>ゲーム</Filter>
     </ClInclude>
     <ClInclude Include="Game\Back.h">
       <Filter>ゲーム\GameObject\Back</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene.h">
+      <Filter>ゲーム\Scene\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player.h">
+      <Filter>ゲーム\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Score.h">
+      <Filter>ゲーム\GameObject\Score</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Enemy.h">
+      <Filter>ゲーム\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sound.h">
+      <Filter>ゲーム\sound</Filter>
     </ClInclude>
   </ItemGroup>
   <!-- リソースファイル -->

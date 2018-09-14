@@ -42,15 +42,6 @@ struct Circle
 };
 typedef struct Circle Circle;
 
-// 描画用 / int x,y , int width,height
-struct Sprite
-{
-	int texture;
-	int x, y;
-	int width, height;
-};
-typedef struct Sprite Sprite;
-
 // デグリーとラジアン
 struct DegRad
 {
@@ -59,12 +50,12 @@ struct DegRad
 typedef struct DegRad DegRad;
 
 // 例
-struct GameObject
-{
-	Vector2D pos;
-	Vector2D vel;
-	Vector2D speed;
-	Sprite sprite;
-};
-typedef struct GameObject GameObject;
-
+//struct GameObject
+//{
+//	Vector2D pos;
+//	Vector2D vel;
+//	Vector2D speed;
+//	SpriteObject sprite;
+//};
+//typedef struct GameObject GameObject;
+//

@@ -1,19 +1,46 @@
 #pragma once
 
-#include "GameObjectStruct.h"
 
-#define PLAYER_SHOT_SIZE 20
+#define USE_MATERIAL_PLAYERTYPE0 (100)
+#define USE_MATERIAL_PLAYERTYPE1 (150)
+#define USE_MATERIAL_PLAYERTYPE2 (200)
 
 // Public
-// äÓñ{ìIÇ»ä÷êî
 
 void InitPlayerObject(void);
 void UpdatePlayerObject(void);
-void RenderPlayerObject(void);
+void RenderPlayerObject(int bright);
 
-void UpdatePlayerShotObject(void);
-void RenderPlayerShotObject(void);
+void SetPlayerObject(int mx, int my, HGRP tex, State state, State type);
 
-// Get / Set 
+void DrawPlayerDescription(void);
 
-Vector2D GetPlayerPosition(void);	// Player ÇÃç¿ïWÇìæÇÈ
+BOOL GetPlayerFlag(int i);
+void SetPlayerFlagFalse(int i);
+Vector2D GetPlayerPos(int i);
+int GetPlayerType(int i);
+
+void PlayerDamage(int i,int damage);
+void PlayerDead(void);
+
+// shot
+void InitPlayerShot(void);
+void UpdatePlayerShot(void);
+void RenderPlayerShot(int bright);
+
+BOOL GetPlayerShotFlag(int i, int s);
+void SetPlayerShotFlagFalse(int i, int s);
+Vector2D GetPlayerShotPos(int i, int s);
+
+// Material
+
+void InitMaterial(void);
+void UpdateMaterial(void);
+void RenderMaterial(int bright);
+
+void AddMaterial(int add);
+
+int GetPlayerNum(void);
+int GetMaterial(void);
+
+extern HFNT font_m;

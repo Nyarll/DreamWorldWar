@@ -31,7 +31,10 @@ BOOL BoxCollision(double x1, double y1, double size_x1, double size_y1,
 	double bx1 = x2 - size_x2, bx2 = x2 + size_x2;
 	double by1 = y2 - size_y2, by2 = y2 + size_y2;
 
-	if ((bx1 < ax2) && (by1 > ay1) && (by2 < ay2) && (ax1 < bx2))
+	DrawBox(ax1, ay1, ax2, ay2, COLOR_RED, FALSE);
+	DrawBox(bx1, by1, bx2, by2, COLOR_RED, FALSE);
+
+	if ((bx1 < ax2) && (by2 > ay1) && (by1 < ay2) && (ax1 < bx2))
 	{
 		return TRUE;
 	}

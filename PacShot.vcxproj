@@ -94,12 +94,15 @@
   <ItemGroup>
     <ClCompile Include="Game\Back.cpp" />
     <ClCompile Include="Game\DrawSprite.cpp" />
+    <ClCompile Include="Game\Enemy.cpp" />
     <ClCompile Include="Game\MyLibrary\Collision.cpp" />
     <ClCompile Include="Game\MyLibrary\DrawFunction.cpp" />
     <ClCompile Include="Game\Player.cpp" />
     <ClCompile Include="Game\PlayScene.cpp" />
     <ClCompile Include="Game\SceneManager.cpp" />
+    <ClCompile Include="Game\Score.cpp" />
     <ClCompile Include="Game\ShotInit.cpp" />
+    <ClCompile Include="Game\Sound.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibGraphics.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibInput.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibMath.cpp" />
@@ -112,6 +115,7 @@
   <ItemGroup>
     <ClInclude Include="Game\Back.h" />
     <ClInclude Include="Game\Define.h" />
+    <ClInclude Include="Game\Enemy.h" />
     <ClInclude Include="Game\GameObjectStruct.h" />
     <ClInclude Include="Game\MyLibrary\Collision.h" />
     <ClInclude Include="Game\MyLibrary\DrawFunction.h" />
@@ -121,6 +125,8 @@
     <ClInclude Include="Game\Player.h" />
     <ClInclude Include="Game\PlayScene.h" />
     <ClInclude Include="Game\SceneManager.h" />
+    <ClInclude Include="Game\Score.h" />
+    <ClInclude Include="Game\Sound.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLib.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLibGraphics.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLibInput.h" />

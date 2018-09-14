@@ -3,7 +3,7 @@
 
 // 画像のフェードイン/フェードアウト
 // ( *file_name ) / 表示したい画像の場所/名称.拡張子
-void DrawLogo(const TCHAR *file_name)
+int DrawLogo(const TCHAR *file_name)
 {
 	// ローカル変数宣言
 	static int bright = 0;
@@ -40,7 +40,9 @@ void DrawLogo(const TCHAR *file_name)
 		if (bright < 0)
 		{
 			DeleteGraph(logo_handle);
-			return;
+			SetDrawBright(255, 255, 255);
+			return FALSE;
 		}
 	}
+	return TRUE;
 }

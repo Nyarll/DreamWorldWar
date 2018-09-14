@@ -2,4 +2,4 @@
 
 void InitBack(void);
 void UpdateBack(void);
-void RenderBack(void);
+void RenderBack(int bright);

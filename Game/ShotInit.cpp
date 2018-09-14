@@ -8,5 +8,5 @@ void InitShot(ObjectShot* shot)
 
 	shot->pos = shot->vel = shot->spd = { 0,0 };
 
-	shot->asset.texture = NULL;
+	shot->sprite.texture = TEXTURE_LOAD_MISSING;
 }
